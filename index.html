@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu primeiro canvas</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+   
+
+</head>
+<body> 
+    <script src="sketch.js"></script>
+    <center>
+    <h1> Meu primeiro Canvas </h1>
+    <canvas id="canvas" width="650px" height="600px"></canvas>
+    <br>
+
+    <input id="cor" type="text" placeholder="Digite a cor 🎨">
+    <input id="larguraLinha" type="number" placeholder="Digite a largura do pincel 🖌️🎨">
+    <button id="botaoLimpar" onclick="limpar()"> Limpar 🧹 </button>
+    <img src="inojin e sarada.png" width="" height="">
+   
+</center>
+
+    <script>
+        
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+
+        var ultimoX, ultimoY;
+        cor = "black";
+        larguraLinha = 1;
+        //é aqui que cria a variável eventoToque
+
+        //é aqui que cria a variável que terá a largura e a altura do canvas
+
+        //é aqui que que muda a largura e altura do canvas se a tela for pequena
+
+        
+        //é aqui que programa o evento touchstart
+
+
+        //é aqui que programa o evento touchmove
+
+        
+
+        // fim do mesmo código utilizado para a versão web
+        function limpar(){
+            ctx.clearRect(0,0,canvas.width, canvas.height)
+        }
+
+    </script>
+</body>
+</html>
